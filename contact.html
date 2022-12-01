@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Hours</title>
+</head>
+<body>
+<div class="header">
+    <img class="logo1" src="logo.png" alt="angels logo" height="100" width="auto">
+<div class="burger">
+    <img class="burg" src="burg.png" alt="angels burg" height="100" width="auto">
+</div>
+<div class="hakdog">
+    <img class="hakdog" src="hakdog.png" alt="angels hakdog" height="100" width="auto">
+</div>
+<div class="mdew">
+    <img class="mdew" src="mdew.png" alt="angels mdew" height="100" width="auto">
+</div>
+</div>
+<div class="nav">
+<a href="index.html"><p class="home">Home</p></a>
+
+<a href="hours.html"><p class="menu">Store Hours</p></a>`
+
+<a href="contact.html"><p class="contact">Contact Us</p></a>
+</div>
+
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Email</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+
+</body>
+</html>
+
+<style>
+    input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+       .header {
+    width: 100%;
+    position: fixed;
+    background-color:rgb(188,1,1) ;
+    height: 110px;
+    border-bottom: 2px solid rgb(255, 3, 3);
+    z-index: 3;
+}
+
+body {
+    background-color:  rgb(232,180,0);
+    overflow-y: scroll;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav p {
+    display: inline;
+    position: relative  ;
+    
+    margin-inline: 18px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(254,189,13);
+    transition: .5s; 
+    z-index: 3;
+}
+
+.nav {
+    position: fixed;
+    z-index: 3;
+    left: 71%;
+}
+
+.logo1 {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+.mdew {
+    position: absolute;
+    left: 180px;
+    top: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.mdew :hover {
+    transform: scale(1.2);
+}
+
+.burger {
+    position: absolute;
+    left: 110px;
+    top: 20px;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.burger :hover {
+    transform: scale(1.2);
+}
+
+.hakdog {
+    position: absolute;
+    cursor: pointer;
+    transition: .5s;
+    left: 120px;
+    top: 5px;
+}
+
+.hakdog:hover {
+    transform: scale(1.2);
+}
+
+.nav p:hover {
+    color: rgb(14, 14, 14);
+    transform: scale(1.1);
+}
+
+.nav {
+    padding-top: 60px;
+    transition: .5s; 
+}
+</style>
